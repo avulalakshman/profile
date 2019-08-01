@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Images</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript">
+        function showMessage(f){
+            if(f==="happy")
+                message = "Be happy....."
+            else if(f==="sleepy")
+                message= "You better continue.... to sleep"
+            else if(f === "angry")
+                message = "Go to hell... who cares...."
+            
+            document.getElementById("res").innerHTML= "<h2>"+message+"</h2>"
+
+
+        }
+    </script>
+</head>
+<body>
+    <h1>How are you feeling today!</h1>
+    <img src="img/happy.jpg" alt="Happy" width="15%"
+    onclick="showMessage('happy')" >
+    <img src="img/sleepy.jpg" alt="Happy" width="15%"
+    onclick="showMessage('sleepy')" >
+    <img src="img/angry.jpg" alt="Happy" width="15%"
+    onclick="showMessage('angry')" >
+
+    <div id="res"></div>
+</body>
+</html>
